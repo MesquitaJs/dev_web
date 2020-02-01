@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- font awesome icons-->
+    <link href="assets/css/all.css" rel="stylesheet">
+    <!--Custom CSS-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Lero - Lero </title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+          <div class="sidebar-header">
+              <h3>Lero Lero Cursos</h3>
+          </div>
+
+          <ul class="list-unstyled components">
+              <p>Lero Lero</p>
+              <li>
+                  <a href="index.html"><i class="fas fa-home">&nbsp; Home</i></a>
+              </li>
+              <li>
+                  <a href="sobre.html"><i class="fas fa-portrait">&nbsp; Sobre</i></a>
+              </li>
+              <li>
+                  <a href="instrutores.html"><i class="fas fa-users">&nbsp; Instrutores</i></a>
+              </li>
+              <li>
+                  <a href="comentarios.html"><i class="fas fa-comments">&nbsp; Comentários</i></a>
+              </li>
+              <li class="active">
+                <a href="#"><i class="fas fa-table">&nbsp; Tabelas</i></a>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled log-regs">
+            <li>
+                <a href="login.html" class="login">Login</a>
+            </li>
+            <li>
+                <a href="registro.html" class="register">Registro</a>
+            </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+
+          <nav class="navbar p-10 pt-15 shadow-sm mb-5 navbar-expand-md navbar-light bg-light">
+              <div class="container-fluid">
+
+                  <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                      <i class="fas fa-align-left"></i>
+                  </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fas fa-align-justify"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registro.html">Registro</a>
+                        </li>
+                    </ul>
+                  </div>
+              </div>
+          </nav>
+
+          <h2>Tabelas</h2>
+          <div class="tab">
+            <button class="tablinks" onclick="openForm(event, 'cursos')">Cursos</button>
+            <button class="tablinks" onclick="openForm(event, 'instrutores')">Instrutores</button>
+            <button class="tablinks" onclick="openForm(event, 'turmas')">Turmas</button>
+            <button class="tablinks" onclick="openForm(event, 'matriculas')">Matrículas</button>
+            <button class="tablinks" onclick="openForm(event, 'alunos')">Alunos</button>
+            <button class="tablinks" onclick="openForm(event, 'admin')">Admin</button>
+          </div>
+          
+          <div id="cursos" class="tabcontent" >
+            <h3>Cursos</h3>
+            <form action="#" name="cursosForm" id="cursosForm">
+                <div class="form-group">
+                    <label>Nome do Curso: </label>
+                    <input type="text" class="form-control" id="nomeCurso" minlength="3" maxlength="50" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Requisito: </label>
+                    <input type="text" class="form-control" id="requisito" minlength="3" maxlength="255"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Ementa: </label>
+                    <textarea type="text" class="form-control form-control-big" id="ementa" minlength="3" maxlength="255"></textarea>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Carga horária: </label>
+                    <input type="number" class="form-control" id="cargaHorariaCurso" minlength="1" maxlength="5"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Preço: </label>
+                    <input type="number" class="form-control" id="preco" min="1" step="any"/>
+                    
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary btn-block" id="submit"/>
+                </div>
+            </form>
+          </div>
+          
+          <div id="instrutores" class="tabcontent">
+            <h3>Instrutores</h3>
+            <form action="#" name="instrutorForm" id="instrutorForm">
+                <div class="form-group">
+                    <label>Nome do Intrutor: </label>
+                    <input type="text" class="form-control" id="nomeInstrutor" minlength="3" maxlength="50" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Email: </label>
+                    <input type="email" class="form-control" id="emailInstrutor" minlength="3" maxlength="50" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Valor Hora: </label>
+                    <input type="number" class="form-control" id="valorHora" min="1" maxlength="10" step="any"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Login: </label>
+                    <input type="text" class="form-control" id="loginInstrutor" minlength="3" maxlength="20" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Senha: </label>
+                    <input type="password" class="form-control" id="passwordInstrutor" minlength="6" maxlength="255"/>
+                    
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary btn-block" id="submit"/>
+                </div>
+            </form>
+          </div>
+          
+          <div id="turmas" class="tabcontent">
+            <h3>Turmas</h3>
+            <form action="#" name="turmaForm" id="turmaForm">
+                <div class="form-group">
+                    <label>ID instrutor: </label>
+                    <input type="number" class="form-control" id="idInstrutor" minlength="1" maxlength="10" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>ID Curso: </label>
+                    <input type="number" class="form-control" id="idCurso" minlength="1" maxlength="11" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Data Início: </label>
+                    <input type="date" class="form-control" id="dataInicio" onkeydown="return false"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Data Término: </label>
+                    <input type="date" class="form-control" id="dataTermino" onkeydown="return false"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Carga horária: </label>
+                    <input type="number" class="form-control" id="cargaHorariaTurma" minlength="1" maxlength="5"/>
+                    
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary btn-block" id="submit"/>
+                </div>
+            </form>
+          </div>
+
+          <div id="matriculas" class="tabcontent">
+            <h3>Matrículas</h3>
+            <form action="#" name="matriculaForm" id="matriculaForm">
+                <div class="form-group">
+                    <label>ID Turma: </label>
+                    <input type="number" class="form-control" id="idInstrutor" minlength="1" maxlength="10" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>ID Aluno: </label>
+                    <input type="number" class="form-control" id="idAluno" minlength="1" maxlength="11" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Data Matrícula: </label>
+                    <input type="date" class="form-control" id="dataMatricula" onkeydown="return false"/>
+            
+                </div>
+                <div class="form-group">
+                    <label>Nota </label>
+                    <input type="number" class="form-control" id="nota" step="0.01" min="0" max="10"/>
+                    
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary btn-block" id="submit"/>
+                </div>
+            </form>
+          </div>
+
+          <div id="alunos" class="tabcontent">
+            <h3>Alunos</h3>
+            <form action="#" name="alunoForm" id="alunoForm">
+                <div class="form-group">
+                    <label>CPF (somente números): </label>
+                    <input type="text" class="form-control" id="cpf" pattern="[0-9]" minlength="11" maxlength="11" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Nome do Aluno: </label>
+                    <input type="text" class="form-control" id="nomeAluno" minlength="3" maxlength="50" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Email: </label>
+                    <input type="email" class="form-control" id="emailAluno" minlength="3" maxlength="50" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Celular </label>
+                    <input type="text" class="form-control" id="celular" pattern="[0-9]" minlength="9" maxlength="14" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Login: </label>
+                    <input type="text" class="form-control" id="loginAluno" minlength="3" maxlength="20" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Senha: </label>
+                    <input type="password" class="form-control" id="passwordAluno" minlength="6" maxlength="255" required/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Endereço: </label>
+                    <input type="text" class="form-control" id="endereco" minlength="3" maxlength="50"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Cidade: </label>
+                    <input type="text" class="form-control" id="endereco" minlength="3" maxlength="30"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Bairro: </label>
+                    <input type="text" class="form-control" id="endereco" minlength="3" maxlength="30"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>CEP (somente números): </label>
+                    <input type="text" class="form-control" id="cpf" pattern="[0-9]" minlength="8" maxlength="8" required/>
+                    
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary btn-block" id="submit"/>
+                </div>
+            </form>
+          </div>
+
+          <div id="admin" class="tabcontent">
+            <h3>Administrador</h3>
+            <div class="form-group">
+                <label>Nome do Admin: </label>
+                <input type="text" class="form-control" id="nomeAdmin" minlength="3" maxlength="50" required/>
+                
+            </div>
+            <div class="form-group">
+                <label>Login: </label>
+                <input type="text" class="form-control" id="loginAdmin" minlength="3" maxlength="20" required/>
+                
+            </div>
+            <div class="form-group">
+                <label>Senha: </label>
+                <input type="password" class="form-control" id="passwordInstrutor" minlength="6" maxlength="255" required/>
+                
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-block" id="submit"/>
+              </div>
+          </div>
+
+
+
+      </div>
+  </div>
+     <!--JQuery-->    
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <!--Bootstrap js-->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--Popper js-->
+    <script src="assets/js/popper.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $('#sidebarCollapse').on('click', function () {
+              $('#sidebar').toggleClass('active');
+          });
+      });
+  </script>
+  </body>
+</html>
