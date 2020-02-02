@@ -10,6 +10,7 @@
     <link href="assets/css/all.css" rel="stylesheet">
     <!--Custom CSS-->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/coments.css" rel="stylesheet">
     <title>Lero - Lero </title>
   </head>
   <body>
@@ -41,10 +42,10 @@
 
           <ul class="list-unstyled log-regs">
               <li>
-                  <a href="#" class="login">Login</a>
+                  <a href="login.html" class="login">Login</a>
               </li>
               <li>
-                  <a href="#" class="register">Registro</a>
+                  <a href="registro.html" class="register">Registro</a>
               </li>
           </ul>
       </nav>
@@ -58,30 +59,136 @@
                   <button type="button" id="sidebarCollapse" class="btn btn-dark">
                       <i class="fas fa-align-left"></i>
                   </button>
-                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <i class="fas fa-align-justify"></i>
-                  </button>
 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse">
                       <ul class="nav navbar-nav ml-auto">
                           <li class="nav-item">
                               <a class="nav-link" href="index.html">Home</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Login</a>
+                              <a class="nav-link" href="login.html">Login</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Registro</a>
+                              <a class="nav-link" href="registro.html">Registro</a>
                           </li>
                       </ul>
                   </div>
               </div>
           </nav>
 
-          <h2>Comentários</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+          <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Comentários<span class="badge badge-info badge-float">3</span></h3>
+                            
+                        </div>
+                            <ul class="list-group">
+                                <!--Comment 01-->
+                                <div class="card-body">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xs-2 col-md-1">
+                                            <img src="assets/img/000024.jpg" class="border-circle  img-fluid" alt="aluno01"/>
+                                        </div>
+                                        <div class="col-xs-10 col-md-11">
+                                            <div>
+                                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                                <div class="mic-info">
+                                                    Por: <a href="#">Aluno01</a> em 30 Jan 2020
+                                                </div>
+                                            </div>
+                                            <div class="comment-text">
+                                                Sobre: curso de Flutter
+                                            </div>
+                                             <!-- 
+                                            <div class="action">
+                                                <button type="button" class="btn btn-primary btn-sm" title="Edit">
+                                                    <span><i class="fas fa-pencil fa-xs"></i></span>
+                                                </button>
+                                                </button>
+                                                <button type="button" class="btn btn-danger btn-sm" title="Delete">
+                                                    <span><i class="fas fa-trash fa-sm"></i></span>
+                                                </button>
+                                            </div>
+                                            -->
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                                <!--/Comment 01-->
+                                <!--Comment 02-->
+                                <div class="card-body">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xs-2 col-md-1">
+                                            <img src="assets/img/000005.jpg" class="border-circle img-fluid" alt="aluno03" /></div>
+                                        <div class="col-xs-10 col-md-11">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                                <div class="mic-info">
+                                                    Por: <a href="#">aluno03</a> em 08 Jan 2020
+                                                </div>
+                                            </div>
+                                            <div class="comment-text">
+                                                Sobre: Curso de React Native
+                                            </div>
+                                             <!-- 
+                                            <div class="action">
+                                                <button type="button" class="btn btn-primary btn-sm" title="Edit">
+                                                    <span><i class="fas fa-pencil fa-xs"></i></span>
+                                                </button>
+                                                </button>
+                                                <button type="button" class="btn btn-danger btn-sm" title="Delete">
+                                                    <span><i class="fas fa-trash fa-sm"></i></span>
+                                                </button>
+                                            </div>
+                                            -->
+                                        </div>
+                                    </div>
+                                </li>
+                                </div>
+                                <!--/Comment 02-->
+                                <!--Comment 03-->
+                                <div class="card-body">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xs-2 col-md-1">
+                                            <img src="assets/img/000022.jpg" class="border-circle img-fluid" alt="aluno02" /></div>
+                                        <div class="col-xs-10 col-md-11">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                                <div class="mic-info">
+                                                    Por: <a href="#">Aluno02</a> on 2 Jan 2020
+                                                </div>
+                                            </div>
+                                            <div class="comment-text">
+                                                Sobre: Curso de Node JS
+                                            </div>
+                                            <!-- 
+                                            <div class="action">
+                                                <button type="button" class="btn btn-primary btn-sm" title="Edit">
+                                                    <span><i class="fas fa-pencil fa-xs"></i></span>
+                                                </button>
+                                                </button>
+                                                <button type="button" class="btn btn-danger btn-sm" title="Delete">
+                                                    <span><i class="fas fa-trash fa-sm"></i></span>
+                                                </button>
+                                            </div>
+                                            -->
+                                        </div>
+                                    </div>
+                                </li>
+                                </div>
+                                <!--/Comment 03-->
+                            </ul>
+                            <a href="#" class="btn btn-primary btn-sm btn-block" role="button"><span> <i class="fas fa-sync-alt"></i></span> Mostrar mais</a>
+                        
+                    </div>
+                </div>
+            </div>
+          </section>
       </div>
   </div>
      <!--JQuery-->    
