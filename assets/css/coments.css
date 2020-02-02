@@ -1,0 +1,32 @@
+.card .list-group {
+  margin-bottom: 0;
+ }
+.card .badge-float { 
+  float: right;
+ }
+ .badge {
+   font-size: 60% !important;
+ }
+.card li.list-group-item {
+  border-radius: 0;border: 0;border-top: 1px solid #ddd;
+}
+.card li.list-group-item:hover {
+  background-color: #563d7c1a;
+ }
+.card .mic-info {
+  color: #000;font-size: 12px;
+ }
+ /**
+.card .action {
+  margin-top:5px;
+ }
+ **/
+.card .btn-block { 
+  border-top-left-radius:0px;border-top-right-radius:0px;
+ }
+ .card .comment-text {
+  font-size: 14px;
+ }
+.card .border-circle {
+   border-radius: 50%;
+ }
